@@ -507,6 +507,39 @@ footer {
     .about-us {
         grid-template-columns: auto;
     }
+
+    .contact-us {
+        grid-template-columns: auto;
+        height: 92rem;
+
+        .right {
+            .details {
+                grid-template-columns: auto;
+            }
+            form {
+                .name {
+                    grid-column: 1;
+                    grid-row: 1; 
+                }
+                .phone {
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+                .email {
+                    grid-column: 1;
+                    grid-row: 3;
+                }
+                .message {
+                    grid-column: 1;
+                    grid-row: 4;
+                }
+                .submit {
+                    grid-column: 1;
+                    grid-row: 5;
+                }
+            }
+        }
+    }
 }
 
 /* RESPONSIVENESS */
