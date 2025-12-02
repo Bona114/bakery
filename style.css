@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+input[type="search"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+input[type="search"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+    background-color: #fff;
+}
+
+.logo {
+    width: 3rem;
+
+    margin-right: 1rem;
+}
+
+.search-bar {
+    width: 75%;
+    height: 2.8rem;
+    padding-inline: 2vw;
+
+    background-color: #eee;
+    border-radius: 2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    input {
+        width: 98%;
+        height: 2rem;
+        padding: auto;
+
+        background-color: #eee;
+        border: 0;
+        outline: none !important;
+    }
+    button {
+        all: unset;
+
+        img {
+            margin-right: -10px;
+            padding-top: 5px;
+            width: 1.5rem;
+        }
+    }
+    button:hover{
+        cursor: pointer;
+    }
+}
+
+
+.buttons {
+    display: flex;
+}
+.button {
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 0.7rem;
+
+    img {
+        width: 2rem;
+    }
+}
+
+.button :hover {
+    cursor: pointer;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 6rem;
+    width: 100%;
+    height: 3rem;
+
+    display: flex;
+    padding: 0 2rem;
+
+    font-size: 1rem;
+    border-block: 1px solid #eee;
+    background-color: #fff;
+}
+.categories {
+    padding: 1rem 2rem;
+
+    display: flex;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #38281b;
+    color: #fff;
+
+    img {
+        width: 1rem;
+        filter: invert();
+        margin-right: 0.5rem;
+    }
+
+    .category-list {
+        position: absolute;
+        top: 2.9rem;
+        left: 2rem;
+        width: 14rem;
+        padding-inline: 2rem;
+
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+
+        border: 2px solid #38281b;
+        border-top: none;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background-color: #fff;
+        list-style: none;
+
+        transition: visibility 0s, opacity 0.3s ease-in;
+
+        li {
+            margin-block: 0.8rem;
+        }
+        a {
+            color: #222;            
+            text-decoration: none;
+        }
+        a:hover {
+            color: #e5b54b;
+        }
+    }
+}
+.categories:hover {
+    cursor: pointer;
+
+    .category-list {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+.nav-links {
+    display: flex;
+    padding: 1rem 2rem;
+
+    list-style: none;
+    gap: 3rem;
+}
+.nav-links li a{
+    color: #222;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.nav-links li a::after {
+    content: '';
+    width: 0px;
+    height: 1.5px;
+    display: block;
+    background: black;
+    transition: 0.3s ease-out;
+}
+.nav-links li a:hover::after {
+    width: 100%;
+}
+#current::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.hamburger img {
+    width: 32px;
+}
+
+
+.hero {
+    margin-top: 10rem;
+    margin-inline: 1rem;
+    
+    text-align: center;
+    color: #fffee4;
+
+    
+    #hero {
+        height: 36rem;
+        width: 100%;
+        
+        content: url("img/Hero1.jpg");
+        object-fit: cover;
+        object-position: 0 0;
+
+        animation-name: heroAnim;
+        animation-duration: 20s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes heroAnim {
+    0%, 18% {
+        content: url("img/Hero1.jpg");
+    }
+    20%,  38%{
+        content: url("img/Hero2.jpg");
+    }
+    40%, 58% {
+        content: url("img/Hero3.jpg");
+    }
+    60%,  78%{
+        content: url("img/Hero4.jpg");
+    }
+    80%, 98%{
+        content: url("img/Hero5.jpg");
+    }
+    100% {
+        content: url("img/Hero1.jpg");
+    }
+}

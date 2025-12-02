@@ -3,10 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BreadnCakes</title>
-    <link rel="stylesheet" href="">
+    <title>Bakery & Cake</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <h1>Hello</h1>
+    <header>
+        <!-- TOP BAR -->
+        <div class="topbar">
+            <!-- LOGO -->
+            <a href="#home">
+                <img src="img/logo.png" alt="Logo" class="logo">
+            </a>
+            <!-- SEARCH BAR -->
+            <form action="/search" method="get" class="search-bar">
+                <input type="search" id="site-search" name="q" placeholder="I'm shopping for ..." />
+                <button type="submit"><img src="img/search.png" alt="search"></button>
+            </form>
+            <div class="buttons">    
+                <div class="button">
+                    <img src="img/cart.png" alt="Cart Icon">
+                    <p>Cart</p>
+                </div>
+                <div class="button">
+                    <img src="img/wishlist.png" alt="Wishlist Icon">
+                    <p>Wishlist</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <div class="categories">
+                <img src="img/list.png">
+                <p>Browse Categories</p>
+                <ul class="category-list">
+                    <li><a href="">Birthday Cakes</a></li><hr>
+                    <li><a href="">Wedding Cakes</a></li><hr>
+                    <li><a href="">Special Day Cakes</a></li><hr>
+                    <li><a href="">Cupcakes</a></li><hr>
+                    <li><a href="">Bread</a></li><hr>
+                    <li><a href="">Dessert</a></li>
+                </ul>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="" id="current">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <img id="hero">
+            <div class="info">
+                <div>
+                    <img src="" alt="">
+                    <h2>Always Open</h2>
+                    <p>Open Daily for Your Convenience! Serving you 7 days a week.</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h2>Free Delivery</h2>
+                    <p>Get free delivery on orders over ₦50,000 right in your neighborhood.</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h2>Free Delivery</h2>
+                    <p>Get free delivery on orders over ₦50,000 right in your neighborhood.</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h2>Secure Payment</h2>
+                    <p>Shop with confidence using Paystack's top-notch security features.</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                    <h2>Customer Rewards</h2>
+                    <p>Enjoy loyalty discounts on every purchase and make every buy count.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
