@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bread & Cake | About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- TOP BAR -->
+        <div class="topbar">
+            <!-- LOGO -->
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo" class="logo">
+            </a>
+            <!-- SEARCH BAR -->
+            <form action="/search" method="get" class="search-bar">
+                <input type="search" id="site-search" name="q" placeholder="I'm shopping for ..." />
+                <button type="submit"><img src="img/search.png" alt="search"></button>
+            </form>
+            <div class="buttons">    
+                <div class="button">
+                    <img src="img/cart.png" alt="Cart Icon">
+                    <p>Cart</p>
+                </div>
+                <div class="button">
+                    <img src="img/wishlist.png" alt="Wishlist Icon">
+                    <p>Wishlist</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <div class="categories">
+                <img src="img/list.png">
+                <p>Browse Categories</p>
+                <ul class="category-list">
+                    <li><a href="">Birthday Cakes</a></li><hr>
+                    <li><a href="">Wedding Cakes</a></li><hr>
+                    <li><a href="">Special Day Cakes</a></li><hr>
+                    <li><a href="">Cupcakes</a></li><hr>
+                    <li><a href="">Bread</a></li><hr>
+                    <li><a href="">Dessert</a></li>
+                </ul>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="contact.html" id="current">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <br><br><br><br><br>
+        <section class="contact-us">
+            <div class="left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0815158599735!2d3.315422!3d6.5113661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8eec4d2983e9%3A0x1a10f29e00796d77!2sAgo%20Palace%20Way%20%26%20Enoma%20St%2C%20Ilasamaja%2C%20Okota%20102214%2C%20Lagos!5e0!3m2!1sen!2sng!4v1763162748385!5m2!1sen!2sng" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="600px" fullscreen=""></iframe>
+            </div>
+            <div class="right">
+                <div class="details">
+                    <div>
+                        <h2>Head Office</h2>
+                        <p>10A Abc Road.<br>By Efg B/Stop. Ikeja - Lagos.</p>
+                    </div>
+                    <div>
+                        <h2>Mobile</h2>
+                        <p>Tel: 0812 345 6789</p>
+                    </div>
+                    <div>
+                        <h2>Email</h2>
+                        <p>info@breadncake.com.ng<br><br>If you have any questions, please feel free to get in touch with us.<br>We will reply to you as soon as possible. Thank you!</p>
+                    </div>
+                    <div>
+                        <h2>Socials</h2>
+                        <a href="">Twitter</a><br>
+                        <a href="">Facebook</a><br>
+                        <a href="">WhatsApp</a>
+                    </div>
+                </div>
+                <h2>Leave A Message</h2>
+                <form action="/message">
+                    <div class="name">
+                        <label for="full-name">Your Name (required)</label><br>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="phone">
+                        <label for="phone-number">Your Phone (required)</label><br>
+                        <input type="text" placeholder="Phone Number" required>
+                    </div>
+                    <div class="email">
+                        <label for="email-address">Your Email (required)</label><br>
+                        <input type="text" placeholder="Email Address" required>
+                    </div>
+                    <div class="message">
+                        <label for="message">Your Message</label><br>
+                        <textarea name="message" id="message" placeholder="Write your message..."></textarea>
+                    </div>
+                    <br>
+                    <input type="submit" class="submit">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <a href="#top" class="back-to-top">
+        <img src="img/top.png" alt="back-to-top">
+    </a>
+    <hr>
+    <footer>
+        <div>© 2025 — All Right reserved!</div>
+        <div>
+            <a href="">Instagram</a>
+            <a href="">Tiktok</a>
+            <a href="">Facebook</a>
+            <a href="">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
